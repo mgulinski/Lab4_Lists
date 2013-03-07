@@ -27,6 +27,15 @@ public class Employee {
 	this.empNum = empNum;
     }
 
+    public Employee(String firstName, String lastName, int empNum, String position) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.empNum = empNum;
+	this.position = position;
+    }
+
+    
+    
     public String getFirstName() {
 	return firstName;
     }
@@ -56,10 +65,9 @@ public class Employee {
     public String toString() {
 	
 	String str = "\nEmployee Info\n----------------" 
-		    + "\nFirst Name: " + firstName
-		    + "\nLast Name: " + lastName
+		    + "\nName: " + firstName + " " + lastName
 		    + "\nEmployee ID: " + empNum
-		    + "\nPosition: " + position + "\n";
+		    + "\nPosition: " + position;
 	
 	return str;  
     

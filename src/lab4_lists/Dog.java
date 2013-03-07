@@ -19,11 +19,22 @@ public class Dog {
 	this.rabiesID = rabiesID;
     }
 
+    public Dog(String name, String rabiesID, String breed) {
+	this.name = name;
+	this.rabiesID = rabiesID;
+	this.breed = breed;
+    }
+
+    
+        
+    
     @Override
     public int hashCode() {
 	int hash = 5;
 	hash = 37 * hash + Objects.hashCode(this.rabiesID);
 	return hash;
+	
+	
     }
 
     @Override
@@ -73,7 +84,7 @@ public class Dog {
 	String str = "\nDog Info\n------------"
 		+ "\nDog Name: " + name
 		+ "\nRabies ID: " + rabiesID 
-		+ "\nBreed: " + breed + "\n";
+		+ "\nBreed: " + breed;
 		
 	
 	return str;
