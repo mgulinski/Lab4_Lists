@@ -21,7 +21,8 @@ public class Lab4_Part1 {
 	
 	for(int i=0; i < ma.size(); i++) {
 	    
-	    System.out.println(ma.get(i));
+	    String m = (String)ma.get(i);
+	    System.out.println(m);
 	}
 	
 	

@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author Machi
  */
-public class Employee {
+public class Employee implements Breathing {
     
     private String firstName;
     private String lastName;
@@ -95,5 +95,10 @@ public class Employee {
 	
 	
 	}
+    }
+
+    @Override
+    public void Breath() {
+	System.out.println("Breathing oxygen, yeah");
     }
 }

@@ -6,7 +6,7 @@ import java.util.Objects;
  * class will demonstrate how to overwrite equals method
  * @author Machi
  */
-public class Dog {
+public class Dog implements Breathing{
     
     
     private String name;
@@ -89,4 +89,9 @@ public class Dog {
 	
 	return str;
 }
+
+    @Override
+    public void Breath() {
+	System.out.println("Breathing oxygen, bark");
+    }
 }
