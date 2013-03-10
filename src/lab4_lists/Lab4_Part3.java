@@ -13,7 +13,7 @@ public class Lab4_Part3 {
     public static void main(String[] args) {
 
 
-	List mylist = new ArrayList();
+	List<Breathing> mylist = new ArrayList();
 	// both objects implement Breathing interface so we can treat them as they are the same now
 	mylist.add(new Employee("Macio", "Gulinski", 333, "Guru"));
 	mylist.add(new Employee("Alex", "Druzny", 222, "Acounting"));
@@ -22,15 +22,11 @@ public class Lab4_Part3 {
 	mylist.add(new Dog("Yupper", "RB33", "Squeeker"));
 
 
-//	for (int i = 0; i < mylist.size(); i++) {
-//
-//	    System.out.println(mylist.get(i));
-//
-//	}
+
 	
-	for (Object o: mylist) {
+	for (Breathing org: mylist) {
 	    
-	    System.out.println(o);
+	    System.out.println(org);
 	
 	}
 	

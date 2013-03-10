@@ -6,7 +6,7 @@ import java.util.Objects;
  * class will demonstrate how to overwrite equals method
  * @author Machi
  */
-public class Dog implements Breathing{
+public class Dog implements Breathing {
     
     
     private String name;
